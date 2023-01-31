@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  margin: 0 auto;
+  width:  60%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "header nav" "main main" "footer footer";
+  border: solid 1px red;
+}
+
+
+header {
+  grid-area: header;
+  padding: 15px;
+}
+
+nav {
+  grid-area: nav;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  grid-area: main;
+  min-height: 500px;
+  background-color: aquamarine;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px 20px;
+}
+footer > div {
+  margin-top: 20px;
+}
+
+/*TODO
+add responisive layout after designing
+ */

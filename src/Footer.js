@@ -2,7 +2,7 @@ import restaurantFood from './assets/restauranfood.jpg'
 function Footer() {
 
     return <footer>
-        <img src={restaurantFood} alt="example of the food from the restaurant Little Lemon"/>
+        <img src={restaurantFood} alt="example of the food from the restaurant Little Lemon" width="171.15"/>
         <div>
             <h3>Navigation</h3>
             <ul>
