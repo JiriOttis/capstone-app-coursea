@@ -1,50 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&family=Markazi+Text:wght@400;500&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-#root {
-  margin: 0 auto;
-  width:  60%;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas: "header nav" "main main" "footer footer";
-  border: solid 1px red;
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16pt;
+  color: #333333;
 }
 
-
-header {
-  grid-area: header;
-  padding: 15px;
+input {
+  font-family: "karla", sans-serif;
+  font-size: 15px;
+  color: #333;
 }
 
-nav {
-  grid-area: nav;
-  padding: 15px;
+::placeholder {
+  color: #949494;
+  opacity: 1; /* Firefox */
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-around;
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #333333;
 }
 
-main {
-  grid-area: main;
-  min-height: 500px;
-  background-color: aquamarine;
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #333333;
 }
 
-footer {
-  grid-area: footer;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 10px 20px;
-}
-footer > div {
-  margin-top: 20px;
+h1, h2 {
+  font-family: 'Markazi Text', serif;
 }
 
-/*TODO
-add responisive layout after designing
- */
+h1 {
+  font-size: 64pt;
+}
+
+h2 {
+  font-size: 40pt;
+}
+
+h3 {
+  font-size: 18pt;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}

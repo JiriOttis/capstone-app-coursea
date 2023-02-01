@@ -1,18 +1,20 @@
-import './styles.css';
-import Header from "./Header";
-import Nav from "./Nav";
-import Main from "./Main";
-import Footer from "./Footer";
+import React from "react";
+import HeaderElement from "./components/HeaderElement";
+import HeroSection from "./components/HeroSection";
+import Footer from "./components/Footer";
+import Specials from "./components/Specials";
+
 
 function App() {
-  return (
-    <>
-        <Header/>
-         <Nav/>
-          <Main/>
-        <Footer/>
-    </>
-  );
+    return (
+        <>
+            <HeaderElement/>
+            <HeroSection/>
+            <Specials/>
+            <Footer/>
+        </>
+    );
 }
 
+/*TODO add Routers*/
 export default App;
