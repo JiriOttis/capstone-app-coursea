@@ -1,17 +1,17 @@
 import React from "react";
-import HeaderElement from "./components/HeaderElement";
-import HeroSection from "./components/HeroSection";
-import Footer from "./components/Footer";
-import Specials from "./components/Specials";
+import Home from "./routes/Home";
+/*import Reservations from "./routes/Reservations";*/
+
+import {Route, Routes} from "react-router-dom";
 
 
 function App() {
     return (
         <>
-            <HeaderElement/>
-            <HeroSection/>
-            <Specials/>
-            <Footer/>
+            <Routes>
+                <Route path = "/" element = {<Home />}/>
+                {/*}  <Route path = "/reservations" element = {<Reservations />}/> {*/}
+            </Routes>
         </>
     );
 }

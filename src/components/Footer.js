@@ -1,6 +1,7 @@
 import React from 'react';
 import "../components/styles/Footer.css";
 import Logo from "../components/assets/logo.png";
+import {NavLink} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,13 +11,15 @@ const Footer = () => {
                 <img src={ Logo } alt="Little Lemon logo" />
                 <p>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally sourced menu with daily specials.</p>
                 <div className="footer-content">
-                    <div className="locations">
-                        <h5>LOCATIONS</h5>
+                    <div className="footer-navigation">
+                        <h5>NAVIGATION</h5>
                         <ul>
-                            <li>Accra</li>
-                            <li>Kumasi</li>
-                            <li>Cape Coast</li>
-                            <li>Tamale</li>
+                            <li><NavLink to="/">Home</NavLink></li>
+                            <li><NavLink to="#">About</NavLink></li>
+                            <li><NavLink to="#">Menu</NavLink></li>
+                            <li><NavLink to="/reservations">Reservations</NavLink></li>
+                            <li><NavLink to="#">Order Online</NavLink></li>
+                            <li><NavLink to="#">Login</NavLink></li>
                         </ul>
                     </div>
                     <div className="opening-times">
