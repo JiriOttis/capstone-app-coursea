@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./routes/Home";
-/*import Reservations from "./routes/Reservations";*/
+import Reservations from "./routes/Reservations";
 
 import {Route, Routes} from "react-router-dom";
 
@@ -10,7 +10,7 @@ function App() {
         <>
             <Routes>
                 <Route path = "/" element = {<Home />}/>
-                {/*}  <Route path = "/reservations" element = {<Reservations />}/> {*/}
+                <Route path = "/reservations" element = {<Reservations />}/>
             </Routes>
         </>
     );
